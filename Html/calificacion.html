@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../Estilos/EstiloBase.css">
+    <link rel="stylesheet" href="../Estilos/stylepromedio.css">
+
+    <title>Calificación de Notas</title>
+</head>
+
+<body>
+
+    <!--  NAVBAR  -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="inicio.html" class="nav-logo">
+                    <img src="../Imagenes/LOGO transp.png" alt="Logo ControlAssistant" class="logo">
+                </a>
+                <h1 class="site-title">ControlAssistant</h1>
+            </div>
+
+            <ul class="nav-right">
+                <li><a href="inicio.html" class="nav-link">Inicio</a></li>
+                <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="calificacion.html" class="nav-link active">Calificar Notas</a></li>
+                <li><a href="inicioSesion.html" class="nav-link">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <div class="container col-10 my-5">
+
+        <div class="row g-4">
+
+            <!-- Panel lateral -->
+            <div class="col-md-4">
+                <div class="card glass-card text-center p-3 mb-3">
+                    <h4>DEVELOPER</h4>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item text-center">
+                        <img src="https://th.bing.com/th/id/R.50f5bd8804632fc33de7156c7bb92e42?rik=K3C2XlyMAbJ4kQ&riu=http://l2t.mx/wp-content/uploads/2017/09/coding.png" alt="Lista" width="100">
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Estudiante:</strong> <span class="text-muted">--JUS CODER--</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Curso:</strong> <span class="text-muted">Aplicaciones Web</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Tarea:</strong> <span class="text-muted">Registro de Notas</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <strong>Semestre:</strong> <span class="text-muted">VI - 2021-2</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-md-8">
+                <div class="card glass-card text-center p-3 mb-3">
+                    <h3>Calificación de Notas</h3>
+                </div>
+
+                <form class="needs-validation" novalidate>
+
+                    <label class="form-label mt-3">Nombres</label>
+                    <input type="text" id="nombre" class="form-control" placeholder="Su nombre" required>
+
+                    <div class="row mt-3">
+                        <div class="col-4">
+                            <label class="form-label">Nota 1</label>
+                            <input type="number" id="nota1" class="form-control" placeholder="Nota" required>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label">Nota 2</label>
+                            <input type="number" id="nota2" class="form-control" placeholder="Nota" required>
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label">Nota 3</label>
+                            <input type="number" id="nota3" class="form-control" placeholder="Nota" required>
+                        </div>
+                    </div>
+
+                    <hr class="mt-4">
+
+                    <p class="text-center">Al hacer click en el botón se promediarán las notas.</p>
+
+                    <div class="d-grid col-6 mx-auto">
+                        <button type="button" class="promediar-btn" onclick="agregarNotas()">Promediar Nota</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+        <!-- RESULTADOS -->
+        <hr class="mt-5">
+
+        <div class="card glass-card text-center p-2 mb-2">
+            <h4>Resultados</h4>
+        </div>
+
+        <table class="table table-striped table-bordered notas-table text-white">
+            <thead class="text-center">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Promedio</th>
+                    <th>Observación</th>
+                </tr>
+            </thead>
+            <tbody id="addtabla"></tbody>
+        </table>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../js/notas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

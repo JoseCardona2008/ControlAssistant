@@ -1,0 +1,121 @@
+/* Fondo general como tu página principal */
+body {
+    background-color: #00473e !important;
+    color: white !important;
+}
+
+/* Tarjetas */
+.card {
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: white !important;
+}
+
+/* Títulos */
+.card h3, 
+.card h4, 
+.card h5 {
+    color: white !important;
+}
+
+/* Inputs */
+input.form-control {
+    background-color: rgba(255,255,255,0.15) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+input.form-control::placeholder {
+    color: #cfe7e2 !important;
+}
+
+/* Tabla */
+.table {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+}
+
+.table thead {
+    background-color: #006b5e !important;
+    color: white !important;
+}
+
+/* Botón */
+.btn-primary {
+    background-color: #008f70 !important;
+    border-color: #00b389 !important;
+}
+
+.btn-primary:hover {
+    background-color: #00b389 !important;
+}
+
+/* Panel derecho (DEVELOPER) */
+.list-group-item {
+    background-color: rgba(255,255,255,0.08) !important;
+    color: white !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.text-muted {
+    color: #cfe7e2 !important;
+}
+.promediar-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #10b981, #047857) !important;
+    border: none !important;
+    border-radius: 0.7rem !important;
+    color: white !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s ease;
+}
+
+.promediar-btn:hover {
+    transform: translateY(-3px);
+    background: #059669 !important;
+    box-shadow: 0 0 35px rgba(16, 185, 129, 0.6);
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 1rem !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    backdrop-filter: blur(10px)
+    box-shadow 0 0 25px rgba(16, 185, 129, 0.2) !important;
+    padding: 1rem;
+}
+.notas-table {
+    background: rgba(255,255,255,0.08) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    backdrop-filter: blur(6px) ;
+    border-radius: 1rem !important;
+}
+
+.notas-table td, 
+.notas-table th {
+    color: white !important;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+.promediar-btn {
+    width: 100%;
+    padding: 0.9rem;
+    background: linear-gradient(135deg, #10b981, #047857);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease;
+}
+
+.promediar-btn:hover {
+    transform: translateY(-3px);
+    background: #059669;
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.6);
+}
