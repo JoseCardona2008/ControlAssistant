@@ -1,24 +1,24 @@
-/* Fondo general como tu página principal */
+
 body {
     background-color: #00473e !important;
     color: white !important;
 }
 
-/* Tarjetas */
+
 .card {
     background-color: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255,255,255,0.2) !important;
     color: white !important;
 }
 
-/* Títulos */
+
 .card h3, 
 .card h4, 
 .card h5 {
     color: white !important;
 }
 
-/* Inputs */
+
 input.form-control {
     background-color: rgba(255,255,255,0.15) !important;
     color: white !important;
@@ -29,7 +29,7 @@ input.form-control::placeholder {
     color: #cfe7e2 !important;
 }
 
-/* Tabla */
+
 .table {
     background-color: rgba(255, 255, 255, 0.1) !important;
     color: white !important;
@@ -40,7 +40,7 @@ input.form-control::placeholder {
     color: white !important;
 }
 
-/* Botón */
+
 .btn-primary {
     background-color: #008f70 !important;
     border-color: #00b389 !important;
@@ -50,7 +50,7 @@ input.form-control::placeholder {
     background-color: #00b389 !important;
 }
 
-/* Panel derecho (DEVELOPER) */
+
 .list-group-item {
     background-color: rgba(255,255,255,0.08) !important;
     color: white !important;
